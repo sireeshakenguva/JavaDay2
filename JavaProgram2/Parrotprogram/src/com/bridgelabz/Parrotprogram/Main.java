@@ -41,15 +41,20 @@ public class Main {
         parrot1.name = "Green Parrot";
         parrot1.colour = "Green";
         parrot1.species = "Bird";
+        
 
         parrot1.fly();
         parrot1.swim();
+        
+       
+        
 
         Parrot parrot2 = new Parrot();
         System.out.println(Parrot.name + " " + Parrot.name);
-        Parrot.name = "White Parrot";
+        parrot2.name = "White Parrot";
         parrot2.colour = "White";
         parrot2.species = "Bird";
+        
 
         parrot2.fly();
         parrot2.swim();
@@ -79,14 +84,25 @@ public class Main {
 
 class Parrot {
     static String name;
-    String colour;
+    protected String colour;
     String species;
 
-    void fly() {
+    public Parrot() {
+		// TODO Auto-generated constructor stub
+	}
+
+	void fly() {
         System.out.println("Parrot can fly.");
+        
     }
 
     void swim() {
         System.out.println("Parrot cannot swim.");
-    }
+    }        
+        
 }
+
+
+
+
+
